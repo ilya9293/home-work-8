@@ -1,0 +1,10 @@
+.link-adress {
+   @include font(14px, 1.71);
+   font-style: normal;
+   color: #ffffff;
+}
+.link-tel-email {
+   @include font(14px, 1.71);
+   font-style: normal;
+   color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,31 @@
+.list-clients {
+   display: flex;
+   justify-content: space-between;
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 92px;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         border-color: var(--color-accent);
+      }
+   }
+
+   &__icon {
+      fill: #afb1b8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .list-clients__link:hover &,
+      .list-clients__link:focus & {
+         fill: var(--color-accent);
+      }
+   }
+}

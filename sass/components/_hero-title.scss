@@ -1,0 +1,10 @@
+.section__main-title {
+   @include font(44px, 1.36, 0.06em);
+   margin-bottom: 30px;
+
+   font-weight: 900;
+   text-align: center;
+   text-transform: uppercase;
+
+   color: #ffffff;
+}

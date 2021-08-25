@@ -1,0 +1,28 @@
+.logo {
+   display: block;
+   padding: 24px 0;
+
+   font-family: Raleway, sans-serif;
+   letter-spacing: 0.03em;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   color: #000000;
+
+   animation-duration: 1000ms;
+   animation-iteration-count: 2;
+
+   &__accent {
+      color: var(--color-accent);
+   }
+
+   .page-footer & {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+}
+
+.page-footer__logo {
+   margin-bottom: 20px;
+   color: #ffffff;
+}

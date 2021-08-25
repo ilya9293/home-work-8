@@ -1,0 +1,32 @@
+.section__benefits {
+   padding-top: 47px;
+}
+
+.list-description {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
+
+   &__item {
+      position: relative;
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 90px) / 3);
+   }
+
+   &__text {
+      @include font;
+      padding: 27px 15px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      background-color: rgba(47, 48, 58, 0.8);
+   }
+}

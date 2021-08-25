@@ -1,0 +1,32 @@
+.button {
+   @include font(16px, 1.87, 0.06em);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 200px;
+   padding: 10px 0;
+   font-weight: 700;
+   color: #ffffff;
+   background: var(--color-accent);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      background-color: #188ce8;
+   }
+}
+
+
+.section__button {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.footer-send-btn-invite {
+   margin-right: 10px;
+}

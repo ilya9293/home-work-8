@@ -1,0 +1,44 @@
+.icons-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      border-radius: 50%;
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .footer-join & {
+         background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-join &:hover,
+      .footer-join &:focus {
+         background-color: var(--color-accent);
+      }
+   }
+
+   &__link:hover,
+   &__link:focus {
+      background-color: var(--color-accent);
+   }
+
+   &__icon {
+      width: 20px;
+      height: 20px;
+      fill: #afb1b8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      .footer-join & {
+         fill: #ffffff;
+      }
+   }
+
+   &__link:hover .icons-list__icon,
+   &__link:focus .icons-list__icon {
+      fill: #ffffff;
+   }
+}

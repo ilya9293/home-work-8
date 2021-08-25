@@ -1,0 +1,12 @@
+.footer-join {
+   width: 206px;
+   margin-right: 93px;
+
+   &__title {
+      @include font;
+      display: block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+}

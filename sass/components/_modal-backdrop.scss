@@ -1,0 +1,44 @@
+.modal-backdrop {
+   position: absolute;
+   width: 528px;
+   left: 50%;
+   top: 50%;
+   padding: 40px;
+
+   background: #ffffff;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   transform: translate(-50%, -50%) scale(1);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(1.2);
+   }
+
+   &__button {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 8px;
+      right: 8px;
+
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: transparent;
+   }
+
+   &__icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      .modal-backdrop__button:focus &,
+      .modal-backdrop__button:hover & {
+         fill: var(--color-accent);
+      }
+   }
+}
