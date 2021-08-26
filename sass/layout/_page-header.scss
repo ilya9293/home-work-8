@@ -5,13 +5,18 @@
       display: flex;
       align-items: center;
    }
-   
+
    &__main-nav {
       margin-left: 93px;
    }
-   
+
    &__head-contact {
       margin-left: auto;
    }
-}
 
+   @media screen and (max-width: 767px) {
+      &__main-nav {
+         display: none;
+      }
+   }
+}

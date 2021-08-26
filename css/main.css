@@ -49,12 +49,12 @@ img {
 
 .logo {
   display: block;
-  padding: 24px 0;
+  padding: 16px 0;
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #000000;
   animation-duration: 1000ms;
   animation-iteration-count: 2;
@@ -83,6 +83,18 @@ img {
   .container {
     width: 480px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -150,6 +162,12 @@ img {
 
 .page-header__head-contact {
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__main-nav {
+    display: none;
+  }
 }
 
 .main-nav-list {
@@ -253,6 +271,12 @@ img {
 .head-contact__link:hover .head-contact__icon,
 .head-contact__link:focus .head-contact__icon {
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .head-contact {
+    display: none;
+  }
 }
 
 .main__section {
