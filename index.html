@@ -23,12 +23,25 @@
       <div class="container">
          <a class="logo link animate__wobble" href="./index.html" lang="en"><span
                class="logo__accent">Web</span>Studio</a>
-               <button class="mobile-button">
-                  <svg class="mobile-button__icon" width="40" height="40">
-                     <use href="./image/icons.svg#menu-button"></use>
-                  </svg>
-               </button>
-                        <!--Навигация на другие страници-->
+         <!-- Мобильное меню -->
+         <button type="button" class="mobile-button">
+            <svg class="mobile-button__icon" width="40" height="40">
+               <use href="./image/icons.svg#menu-button"></use>
+            </svg>
+         </button>
+         <div class="mobile-backdrop">
+            <button type="button" class="mobile-backdrop__close-btn">
+               <svg class="mobile-backdrop__icon" width="40" height="40">
+                  <use href="./image/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+            <ul class="mobile-nav">
+               <li class="mobile-nav__item item"><a href="./index.html" class="mobile-nav__link link">Студия</a></li>
+               <li class="mobile-nav__item item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a></li>
+               <li class="mobile-nav__item item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+            </ul>
+         </div>
+         <!--Навигация на другие страници-->
          <nav class="page-header__main-nav">
             <ul class="main-nav-list item">
                <li class="main-nav-list__item"><a class="main-nav-list__link link link-accent"
@@ -43,14 +56,14 @@
          <ul class="head-contact page-header__head-contact item">
             <li class="head-contact__item">
                <a class="head-contact__link link" href="mailto:info@devstudio.com">
-                  <svg class="head-contact__icon" width="16" height="12">
+                  <svg class="head-contact__icon head-contact__icon_letter_size" width="16" height="12">
                      <use href="./image/icons.svg#icon-envelope-hover"></use>
                   </svg>
                   info@devstudio.com</a>
             </li>
             <li class="head-contact__item">
                <a class="head-contact__link link" href="tel:+380961111111">
-                  <svg class="head-contact__icon" width="10" height="16">
+                  <svg class="head-contact__icon head-contact__icon_tel_size" width="10" height="16">
                      <use href="./image/icons.svg#icon-smartphone"></use>
                   </svg>
                   +38 096 111 11 11</a>
@@ -367,8 +380,8 @@
 
    <!-- Футер контакты -->
    <!-- <footer class="page-footer"> -->
-      <!-- <div class="container container__flex"> -->
-         <!-- <div class="container-adress">
+   <!-- <div class="container container__flex"> -->
+   <!-- <div class="container-adress">
             <a class="logo link page-footer__logo" href="./index.html" lang="en"><span
                   class="logo__accent">Web</span>Studio</a>
             <address class="page-footer__adress">
@@ -384,8 +397,8 @@
                </ul>
             </address>
          </div> -->
-         <!-- Присоединяйтесь -->
-         <!-- <div class="footer-join">
+   <!-- Присоединяйтесь -->
+   <!-- <div class="footer-join">
             <b class="footer-join__title">присоединяйтесь</b>
             <ul class="icons-list item">
                <li class="icons-list__item">
@@ -418,7 +431,7 @@
                </li>
             </ul>
          </div> -->
-         <!-- <form action="#" class="form-footer-sign">
+   <!-- <form action="#" class="form-footer-sign">
             <label class="form-footer-sign__invite">Подпишитесь на рассылку
                <input type="email" name="user-send-mail" placeholder="E-mail" class="form-footer-sign__field">
             </label>
@@ -429,7 +442,7 @@
                </svg>
             </button>
          </form> -->
-      </div>
+   </div>
 
    </footer>
 

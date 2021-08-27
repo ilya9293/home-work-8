@@ -1,0 +1,10 @@
+.mobile-nav {
+   &__item {
+   }
+
+   &__link {
+      font-weight: 500;
+      @include font(40px, 1.18, 0.02em);
+      color: var(--color-title);
+   }
+}

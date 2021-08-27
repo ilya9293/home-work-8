@@ -1,9 +1,17 @@
 .mobile-button {
-   &__icon {
-      
+   border: none;
+   padding: 10px 0;
+   line-height: 0;
+   background-color: transparent;
+   @include animate(fill);
+  
+   &:hover {
+      fill: var(--color-accent);
    }
 }
 
-
-		
-
+@media  screen and (min-width: 768px) {
+   .mobile-button {
+      display: none;
+   }
+}

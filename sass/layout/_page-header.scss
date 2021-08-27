@@ -4,10 +4,22 @@
    & .container {
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 767px) {
+         & {
+            justify-content: space-between;
+         }
+      }
    }
 
    &__main-nav {
-      margin-left: 93px;
+      margin-left: 88px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      &__main-nav {
+         margin-left: 93px;
+      }
    }
 
    &__head-contact {
