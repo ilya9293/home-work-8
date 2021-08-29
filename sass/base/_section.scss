@@ -32,3 +32,9 @@
       width: 1200px;
    }
 }
+
+.mobile-container {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
