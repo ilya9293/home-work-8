@@ -1,5 +1,5 @@
 .section__main-title {
-   @include font(44px, 1.36, 0.06em);
+   @include font(26px, 1.62, 0.06em);
    margin-bottom: 30px;
 
    font-weight: 900;
@@ -7,4 +7,10 @@
    text-transform: uppercase;
 
    color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+   .section__main-title {
+      @include font(44px, 1, 36, 0.06em);
+   }
 }

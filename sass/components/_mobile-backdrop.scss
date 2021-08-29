@@ -7,8 +7,13 @@
    padding: 48px 40px;
    background-color: #ffffff;
    overflow: auto;
+   // opacity: 0;
+   // visibility: hidden;
+   // pointer-events: none;
+   transform: translateY(-100%);
+   @include animate(transform);
 
-      &__close-btn {
+   &__close-btn {
       position: absolute;
       top: 10px;
       right: 15px;
@@ -19,7 +24,8 @@
       @include animate(fill);
    }
 
-   &__close-btn:hover {
+   &__close-btn:hover,
+   &__close-btn:focus {
       fill: var(--color-accent);
    }
 }
@@ -28,4 +34,11 @@
    .mobile-backdrop {
       display: none;
    }
+}
+
+.is-open {
+   // opacity: 1;
+   // visibility: visible;
+   // pointer-events: auto;
+   transform: translateY(0);
 }

@@ -5,7 +5,8 @@
    background-color: transparent;
    @include animate(fill);
   
-   &:hover {
+   &:hover,
+   &:focus {
       fill: var(--color-accent);
    }
 }

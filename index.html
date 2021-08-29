@@ -24,19 +24,18 @@
          <a class="logo link animate__wobble" href="./index.html" lang="en"><span
                class="logo__accent">Web</span>Studio</a>
          <!-- Мобильное меню -->
-         <button type="button" class="mobile-button">
+         <button type="button" class="mobile-button" data-menu-button>
             <svg class="mobile-button__icon" width="40" height="40">
                <use href="./image/icons.svg#menu-button"></use>
             </svg>
          </button>
-         <div class="mobile-backdrop">
 
-            <button type="button" class="mobile-backdrop__close-btn">
+         <div class="mobile-backdrop" data-menu>
+            <button type="button" class="mobile-backdrop__close-btn" data-menu-close>
                <svg class="mobile-backdrop__icon" width="40" height="40">
                   <use href="./image/icons.svg#icon-close"></use>
                </svg>
             </button>
-
             <div class="mobile-container">
                <ul class="mobile-nav">
                   <li class="mobile-nav__item item"><a href="./index.html"
@@ -49,7 +48,8 @@
 
                <ul class="mobile-contacts">
                   <li class="mobile-contacts__item item"><a href="tel:+380961111111"
-                        class="mobile-contacts__link mobile-contacts__link_size_color link">+38 096 111 11 11</a></li>
+                        class="mobile-contacts__link mobile-contacts__link_size_color link">+38 096 111 11 11</a>
+                  </li>
                   <li class="mobile-contacts__item item"><a href="mailto:info@devstudio.com"
                         class="mobile-contacts__link link">info@devstudio.com</a></li>
                </ul>
@@ -96,11 +96,11 @@
 
    <main class="main">
       <!--главный блок-->
-      <!-- <section class="section main__section">
+      <section class="section main__section">
          <h1 class="section__main-title">Эффективные решения <br> для вашего бизнеса</h1>
          <button class="button section__button" type="button" data-modal-open>Заказать услугу</button>
 
-      </section> -->
+      </section>
 
       <!--Особенности сайта-->
       <!-- <section class="section section__features">
@@ -522,6 +522,7 @@
    </div> -->
 
    <!-- <script src="./js/modal.js"></script> -->
+   <script src="./js/menu.js"></script>
 </body>
 
 </html>
