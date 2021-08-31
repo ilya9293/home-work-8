@@ -2,20 +2,26 @@
    display: flex;
    flex-direction: column;
 
-   &_head {
+   &__head {
       font-size: 20px;
-      line-height: 1.15;
+      line-height: 1.5;
       text-align: center;
       letter-spacing: 0.03em;
 
       color: var(--color-title);
    }
 
+   @media screen and (min-width: 1200px) {
+      &__head {
+         line-height: 1.15;
+      }
+   }
+
    &__label {
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.01em;
-      margin-top: 12px;
+      margin-top: 10px;
    }
 
    &__field {
@@ -65,6 +71,14 @@
          letter-spacing: 0.01em;
          color: rgba(117, 117, 117, 0.5);
       }
+
+      @media screen and (min-width: 1200px) {
+         &::placeholder {
+         @include font(12px, 1.17, 0.01em);
+         }
+      }
+      
+
       &:focus {
          outline: none;
          border-color: var(--color-accent);
@@ -75,10 +89,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       margin-top: 20px;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.17;
       letter-spacing: 0.03em;
+   }
+
+   @media screen and (min-width: 1200px) {
+      &__policy {
+         @include font(14px, 1.71)
+      }
+      
    }
 
    &__link-policy {
