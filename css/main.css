@@ -298,12 +298,20 @@ img {
 }
 
 .page-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-title);
+}
+
+@media screen and (min-width: 1200px) {
+  .page-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .page-header {
@@ -544,6 +552,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section__features {
+    padding-bottom: 47px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .feature-list {
     display: flex;
@@ -610,8 +624,16 @@ img {
   height: 70px;
 }
 
-.section__benefits {
-  padding-top: 47px;
+@media screen and (min-width: 1200px) {
+  .section__benefits {
+    padding-top: 47px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section__benefits {
+    display: none;
+  }
 }
 
 .list-description {
@@ -645,28 +667,50 @@ img {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
   /* .team-list__item + .team-list__item {
    margin-left: 30px;
 } */
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .team-list__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 120px) / 4);
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .team-list__block-name {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 122px;
+  padding-right: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__block-name {
+    padding: 0 74px;
+  }
 }
 
 .team-list__name {
