@@ -36,6 +36,9 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .link {
@@ -702,9 +705,11 @@ img {
   }
 }
 
-.team-list__block-name {
-  padding-left: 122px;
-  padding-right: 122px;
+@media screen and (min-width: 480px) {
+  .team-list__block-name {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -741,7 +746,7 @@ img {
 
 .icons-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -781,6 +786,10 @@ img {
 .icons-list__link:hover .icons-list__icon,
 .icons-list__link:focus .icons-list__icon {
   fill: #ffffff;
+}
+
+.icons-list_size {
+  width: 206px;
 }
 
 .list-clients {

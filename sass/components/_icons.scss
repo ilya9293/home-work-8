@@ -1,6 +1,6 @@
 .icons-list {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
 
    &__link {
@@ -40,5 +40,9 @@
    &__link:hover .icons-list__icon,
    &__link:focus .icons-list__icon {
       fill: #ffffff;
+   }
+
+   &_size {
+      width: 206px;
    }
 }

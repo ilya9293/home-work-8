@@ -33,9 +33,11 @@
       }
    }
 
-   &__block-name {
-      padding-left: 122px;
-      padding-right: 122px;
+   @media screen and (min-width: 480px) {
+      &__block-name {
+         padding-left: 122px;
+         padding-right: 122px;
+      }
    }
 
    @media screen and (min-width: 768px) {
