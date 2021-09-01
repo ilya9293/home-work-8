@@ -33,6 +33,13 @@
       }
    }
 
+   @media screen and (min-width: 1200px) {
+      &__item {
+         padding-bottom: 30px;
+         flex-basis: calc((100% - 120px) / 4);
+      }
+   }
+
    @media screen and (min-width: 480px) {
       &__block-name {
          padding-left: 122px;
@@ -43,6 +50,12 @@
    @media screen and (min-width: 768px) {
       &__block-name {
          padding: 0 74px;
+      }
+   }
+
+   @media screen and (min-width: 1200px) {
+      &__block-name {
+         padding: 0 32px;
       }
    }
 

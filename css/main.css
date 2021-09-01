@@ -705,6 +705,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    padding-bottom: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
 @media screen and (min-width: 480px) {
   .team-list__block-name {
     padding-left: 122px;
@@ -715,6 +722,12 @@ img {
 @media screen and (min-width: 768px) {
   .team-list__block-name {
     padding: 0 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__block-name {
+    padding: 0 32px;
   }
 }
 
@@ -790,6 +803,7 @@ img {
 
 .icons-list_size {
   width: 206px;
+  margin: 0 auto;
 }
 
 .list-clients {
