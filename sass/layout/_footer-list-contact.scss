@@ -1,9 +1,11 @@
-.page-footer__list-contact {
-   margin-right: 70px;
+.list-contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .list-contact__item:not(:first-child) {
-   margin-top: 9px;
+   margin-top: 8px;
 }
 
 .list-contact__link {
@@ -18,3 +20,9 @@
       color: rgba(255, 255, 255, 0.6);
    }
 }
+
+// @media screen and (max-width: 767px) {
+//    .page-footer__list-contact {
+//       margin-bottom: 60px;
+//    }
+// }

@@ -1,10 +1,27 @@
 .page-footer {
    background-color: var(--color-background);
    padding: 60px 0px;
+
+   @media screen and (min-width: 768px) {
+      &__container-tablet {
+         display: flex;
+         align-items: baseline;
+      }
+   }
 }
 
 .container__flex {
    display: flex;
-   align-items: baseline;  
+   flex-direction: column;
+   align-items: center;
 }
 
+.container-adress {
+   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+   .container-adress {
+      margin-right: 165px;
+   }
+}
