@@ -748,6 +748,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .img-team {
+    width: 450px;
+  }
+}
+
 .icons-list {
   display: flex;
   justify-content: space-between;
