@@ -1336,6 +1336,7 @@ img {
 }
 
 .modal-form__container {
+  display: block;
   position: relative;
   margin-top: 4px;
 }
