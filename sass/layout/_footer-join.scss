@@ -7,6 +7,12 @@
       }
    }
 
+   @media screen and (min-width: 1200px) {
+      & {
+         margin-right: 93px;
+      }
+   }
+
    &__title {
       @include font;
       display: block;

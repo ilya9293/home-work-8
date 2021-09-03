@@ -24,12 +24,51 @@
       <div class="container">
          <a class="logo link animate__wobble" href="./index.html" lang="en"><span
                class="logo__accent">Web</span>Studio</a>
+         <!-- Мобильное меню -->
+         <button type="button" class="mobile-button" data-menu-button>
+            <svg class="mobile-button__icon" width="40" height="40">
+               <use href="./image/icons.svg#menu-button"></use>
+            </svg>
+         </button>
+
+         <div class="mobile-backdrop" data-menu>
+            <button type="button" class="mobile-backdrop__close-btn" data-menu-close>
+               <svg class="mobile-backdrop__icon" width="40" height="40">
+                  <use href="./image/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+            <div class="mobile-container">
+               <ul class="mobile-nav">
+                  <li class="mobile-nav__item item"><a href="./index.html"
+                        class="mobile-nav__link link">Студия</a></li>
+                  <li class="mobile-nav__item item"><a href="./portfolio.html"
+                        class="mobile-nav__link mobile-nav__link_accent link">Портфолио</a>
+                  </li>
+                  <li class="mobile-nav__item item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+               </ul>
+
+               <ul class="mobile-contacts">
+                  <li class="mobile-contacts__item item"><a href="tel:+380961111111"
+                        class="mobile-contacts__link mobile-contacts__link_size_color link">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mobile-contacts__item item"><a href="mailto:info@devstudio.com"
+                        class="mobile-contacts__link link">info@devstudio.com</a></li>
+               </ul>
+
+               <ul class="mobile-social mobile-social_indent">
+                  <li class="mobile-social__item item"><a href="" class="mobile-social__link link">Instagram</a></li>
+                  <li class="mobile-social__item item"><a href="" class="mobile-social__link link">Twitter</a></li>
+                  <li class="mobile-social__item item"><a href="" class="mobile-social__link link">Facebook</a></li>
+                  <li class="mobile-social__item item"><a href="" class="mobile-social__link link">LinkedIn</a></li>
+               </ul>
+            </div>
+         </div>
          <!--Навигация на другие страници-->
          <nav class="page-header__main-nav">
             <ul class="main-nav-list item">
-               <li class="main-nav-list__item"><a class="main-nav-list__link link"
+               <li class="main-nav-list__item"><a class="main-nav-list__link link link-accent"
                      href="./index.html">Студия</a></li>
-               <li class="main-nav-list__item"><a class="main-nav-list__link link link-accent" href="./portfolio.html">Портфолио</a>
+               <li class="main-nav-list__item"><a class="main-nav-list__link link" href="./portfolio.html">Портфолио</a>
                </li>
                <li class="main-nav-list__item"><a class="main-nav-list__link link" href="">Контакты</a></li>
             </ul>
@@ -39,14 +78,14 @@
          <ul class="head-contact page-header__head-contact item">
             <li class="head-contact__item">
                <a class="head-contact__link link" href="mailto:info@devstudio.com">
-                  <svg class="head-contact__icon" width="16" height="12">
+                  <svg class="head-contact__icon head-contact__icon_letter_size" width="16" height="12">
                      <use href="./image/icons.svg#icon-envelope-hover"></use>
                   </svg>
                   info@devstudio.com</a>
             </li>
             <li class="head-contact__item">
                <a class="head-contact__link link" href="tel:+380961111111">
-                  <svg class="head-contact__icon" width="10" height="16">
+                  <svg class="head-contact__icon head-contact__icon_tel_size" width="10" height="16">
                      <use href="./image/icons.svg#icon-smartphone"></use>
                   </svg>
                   +38 096 111 11 11</a>
@@ -72,8 +111,8 @@
             <ul class="list-cards item">
                <li class="list-cards__item"><a class="list-cards__link link" href="">
                      <div class="list-cards__container-overlay">
-                        <img class="list-cards__img" src="././image/image-portfolio/tehno-kryak.jpg" width="370" height="294"
-                           alt="сайт открытый на ноутбуке">
+                        <img class="list-cards__img" src="././image/image-portfolio/tehno-kryak.jpg" width="370"
+                           height="294" alt="сайт открытый на ноутбуке">
                         <p class="list-cards__overlay-text">
                            Технокряк это современная площадка распространения коронавируса. Компании используют эту
                            платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -86,8 +125,8 @@
                   </a></li>
                <li class="list-cards__item"><a class="list-cards__link link" href="">
                      <div class="list-cards__container-overlay">
-                        <img class="list-cards__img" src="./image/image-portfolio/new-orlean.jpg" width="370" height="294"
-                           alt="два баскетболиста">
+                        <img class="list-cards__img" src="./image/image-portfolio/new-orlean.jpg" width="370"
+                           height="294" alt="два баскетболиста">
                         <p class="list-cards__overlay-text">
                            Технокряк это современная площадка распространения коронавируса. Компании используют эту
                            платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -142,8 +181,8 @@
                   </a></li>
                <li class="list-cards__item"><a class="list-cards__link link" href="">
                      <div class="list-cards__container-overlay">
-                        <img class="list-cards__img" src="./image/image-portfolio/inspiration.jpg" width="370" height="294"
-                           alt="сайт на моноблоке">
+                        <img class="list-cards__img" src="./image/image-portfolio/inspiration.jpg" width="370"
+                           height="294" alt="сайт на моноблоке">
                         <p class="list-cards__overlay-text">
                            Технокряк это современная площадка распространения коронавируса. Компании используют эту
                            платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -170,8 +209,8 @@
                   </a></li>
                <li class="list-cards__item"><a class="list-cards__link link" href="">
                      <div class="list-cards__container-overlay">
-                        <img class="list-cards__img" src="./image/image-portfolio/project-lab.jpg" width="370" height="294"
-                           alt="ярлык проэкта">
+                        <img class="list-cards__img" src="./image/image-portfolio/project-lab.jpg" width="370"
+                           height="294" alt="ярлык проэкта">
                         <p class="list-cards__overlay-text">
                            Технокряк это современная площадка распространения коронавируса. Компании используют эту
                            платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -204,55 +243,61 @@
    <!-- Футер -->
    <footer class="page-footer">
       <div class="container container__flex">
-         <div class="container-adress">
-            <a class="logo link page-footer__logo" href="./index.html" lang="en"><span
-                  class="logo__accent">Web</span>Studio</a>
-            <address class="page-footer__adress">
-               <ul class="list-contact page-footer__list-contact item">
-                  <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_light link" href="https://goo.gl/maps/WN71BLrKNxGnRLgBA"
-                        target="blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                  <!-- нужно добавить атрибуты к таргет бланк, не помню какие -->
-                  <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_dark link"
-                        href="mailto:info@devstudio.com">info@example.com</a></li>
-                  <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_dark link" href="tel:+380991111111">+38 099 111 11 11</a>
+         <div class="page-footer__container-tablet">
+            <div class="container-adress">
+               <a class="logo link page-footer__logo" href="./index.html" lang="en"><span
+                     class="logo__accent">Web</span>Studio</a>
+               <address class="page-footer__adress">
+                  <ul class="list-contact page-footer__list-contact item">
+                     <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_light link"
+                           href="https://goo.gl/maps/WN71BLrKNxGnRLgBA" target="blank" rel="noopener noreferrer">г.
+                           Киев,
+                           пр-т Леси Украинки, 26</a></li>
+                     <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_dark link"
+                           href="mailto:info@devstudio.com">info@example.com</a></li>
+                     <li class="list-contact__item"><a class="list-contact__link list-contact__link_theme_dark link"
+                           href="tel:+380991111111">+38 099 111 11 11</a>
+                     </li>
+                  </ul>
+               </address>
+            </div>
+            <!-- Присоединяйтесь -->
+            <div class="footer-join">
+               <b class="footer-join__title">присоединяйтесь</b>
+               <ul class="icons-list item">
+                  <li class="icons-list__item">
+                     <a href="" class="icons-list__link link">
+                        <svg class="icons-list__icon">
+                           <use href="./image/icons.svg#icon-instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="icons-list__item">
+                     <a href="" class="icons-list__link link">
+                        <svg class="icons-list__icon">
+                           <use href="./image/icons.svg#icon-twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="icons-list__item">
+                     <a href="" class="icons-list__link link">
+                        <svg class="icons-list__icon">
+                           <use href="./image/icons.svg#icon-facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="icons-list__item">
+                     <a href="" class="icons-list__link link">
+                        <svg class="icons-list__icon">
+                           <use href="./image/icons.svg#icon-linkedin"></use>
+                        </svg>
+                     </a>
                   </li>
                </ul>
-            </address>
+            </div>
          </div>
-         <!-- Присоединяйтесь -->
-         <div class="footer-join">
-            <b class="footer-join__title">присоединяйтесь</b>
-            <ul class="icons-list item">
-               <li class="icons-list__item">
-                  <a href="" class="icons-list__link link">
-                     <svg class="icons-list__icon">
-                        <use href="./image/icons.svg#icon-instagram"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="icons-list__item">
-                  <a href="" class="icons-list__link link">
-                     <svg class="icons-list__icon">
-                        <use href="./image/icons.svg#icon-twitter"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="icons-list__item">
-                  <a href="" class="icons-list__link link">
-                     <svg class="icons-list__icon">
-                        <use href="./image/icons.svg#icon-facebook"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="icons-list__item">
-                  <a href="" class="icons-list__link link">
-                     <svg class="icons-list__icon">
-                        <use href="./image/icons.svg#icon-linkedin"></use>
-                     </svg>
-                  </a>
-               </li>
-            </ul>
-         </div>
+
+
          <form action="#" class="form-footer-sign">
             <label class="form-footer-sign__invite">Подпишитесь на рассылку
                <input type="email" name="user-send-mail" placeholder="E-mail" class="form-footer-sign__field">
@@ -267,6 +312,8 @@
       </div>
 
    </footer>
+
+   <script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,12 @@
    margin-top: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+   .list-contact__item:not(:first-child) {
+      margin-top: 9px;
+   }
+}
+
 .list-contact__link {
    @include font(14px, 1.71);
    font-style: normal;
