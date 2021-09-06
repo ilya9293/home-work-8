@@ -97,9 +97,10 @@
    <main class="main">
       <!--главный блок-->
       <section class="section main__section">
-         <h1 class="section__main-title">Эффективные решения <br> для вашего бизнеса</h1>
-         <button class="button section__button" type="button" data-modal-open>Заказать услугу</button>
-
+         <div class="container">
+            <h1 class="section__main-title">Эффективные решения для вашего бизнеса</h1>
+            <button class="button section__button" type="button" data-modal-open>Заказать услугу</button>
+         </div>
       </section>
 
       <!--Особенности сайта-->
@@ -571,8 +572,10 @@
                <svg class="modal-form__check-icon" width="16" height="15">
                   <use href="./image/icons.svg#icon-icon-check-two"></use>
                </svg>
-               Соглашаюсь с рассылкой и принимаю&nbsp
-               <a href="" target="blank" rel="noopener noreferrer" class="modal-form__link-policy">Условия договора</a>
+               <span class="modal-form__text">Соглашаюсь с рассылкой и принимаю&nbsp
+                  <a href="" target="blank" rel="noopener noreferrer" class="modal-form__link-policy">Условия
+                     договора</a>
+               </span>
             </label>
             <button type="submit" class="button modal-form__button">Отправить</button>
          </form>

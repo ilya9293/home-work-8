@@ -75,10 +75,9 @@
 
       @media screen and (min-width: 1200px) {
          &::placeholder {
-         @include font(12px, 1.17, 0.01em);
+            @include font(12px, 1.17, 0.01em);
          }
       }
-      
 
       &:focus {
          outline: none;
@@ -97,11 +96,16 @@
       letter-spacing: 0.03em;
    }
 
+   @media screen and (max-width: 480px) {
+      &__policy {
+         flex-wrap: nowrap;
+      }
+   }
+
    @media screen and (min-width: 1200px) {
       &__policy {
-         @include font(14px, 1.71)
+         @include font(14px, 1.71);
       }
-      
    }
 
    &__link-policy {
@@ -130,6 +134,7 @@
 } */
 
    &__check-icon {
+      flex-shrink: 0;
       margin-right: 7px;
       border: 2px solid var(--color-title);
       border-radius: 2px;
