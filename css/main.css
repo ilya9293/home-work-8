@@ -1199,6 +1199,18 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 450px) {
+  .list-cards__overlay-text {
+    padding: 60px 24px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .list-cards__overlay-text {
+    padding: 40px 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .list-cards__overlay-text {
     padding: 49px 24px;
@@ -1224,7 +1236,6 @@ img {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1245,6 +1256,8 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  max-height: calc(100% - 30px);
 }
 
 @media screen and (max-width: 479px) {
